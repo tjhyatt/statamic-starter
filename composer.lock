@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "add1f90e865f10012e5d15d509755461",
+    "content-hash": "8617acc22c2d6f0f63b4546e5ac0f113",
     "packages": [
         {
             "name": "ajthinking/archetype",
-            "version": "v1.1.4",
+            "version": "v1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ajthinking/archetype.git",
-                "reference": "62abebdc1445a8c431753ac91ada230bb7b9d418"
+                "reference": "cfee02623c784da8ac4004803efed99fc56ead18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ajthinking/archetype/zipball/62abebdc1445a8c431753ac91ada230bb7b9d418",
-                "reference": "62abebdc1445a8c431753ac91ada230bb7b9d418",
+                "url": "https://api.github.com/repos/ajthinking/archetype/zipball/cfee02623c784da8ac4004803efed99fc56ead18",
+                "reference": "cfee02623c784da8ac4004803efed99fc56ead18",
                 "shasum": ""
             },
             "require": {
@@ -65,9 +65,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ajthinking/archetype/issues",
-                "source": "https://github.com/ajthinking/archetype/tree/v1.1.4"
+                "source": "https://github.com/ajthinking/archetype/tree/v1.1.5"
             },
-            "time": "2022-05-25T07:35:55+00:00"
+            "time": "2022-08-24T05:52:35+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -474,16 +474,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.4.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "026d6de6ea2c913974a7756661a3faac135cb36e"
+                "reference": "777d542e3af65f8e7a66a4d98ce7a697da339414"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/026d6de6ea2c913974a7756661a3faac135cb36e",
-                "reference": "026d6de6ea2c913974a7756661a3faac135cb36e",
+                "url": "https://api.github.com/repos/composer/composer/zipball/777d542e3af65f8e7a66a4d98ce7a697da339414",
+                "reference": "777d542e3af65f8e7a66a4d98ce7a697da339414",
                 "shasum": ""
             },
             "require": {
@@ -566,7 +566,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.4.0"
+                "source": "https://github.com/composer/composer/tree/2.4.1"
             },
             "funding": [
                 {
@@ -582,7 +582,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-16T14:10:48+00:00"
+            "time": "2022-08-20T09:44:50+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -4973,16 +4973,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.3.30",
+            "version": "v3.3.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "037fddfd7ce88e0ad27a7d62892cf08b64d59c4f"
+                "reference": "062eff3b3e53106b5e8a19ec71c205a71a635fa1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/037fddfd7ce88e0ad27a7d62892cf08b64d59c4f",
-                "reference": "037fddfd7ce88e0ad27a7d62892cf08b64d59c4f",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/062eff3b3e53106b5e8a19ec71c205a71a635fa1",
+                "reference": "062eff3b3e53106b5e8a19ec71c205a71a635fa1",
                 "shasum": ""
             },
             "require": {
@@ -5060,7 +5060,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.3.30"
+                "source": "https://github.com/statamic/cms/tree/v3.3.32"
             },
             "funding": [
                 {
@@ -5068,7 +5068,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-17T20:57:30+00:00"
+            "time": "2022-08-25T14:11:41+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -11000,5 +11000,5 @@
         "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

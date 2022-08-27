@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './resources/**/*.antlers.html',
@@ -6,7 +8,15 @@ module.exports = {
     './content/**/*.md'
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['Poppins', ...defaultTheme.fontFamily.sans],
+      },
+      width: {
+        container: '1440px',
+        'container-md': '960px',
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

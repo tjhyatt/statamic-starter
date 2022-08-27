@@ -1,0 +1,63 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: description
+        field:
+          type: markdown
+          localizable: true
+          display: Description
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          always_save: false
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+      -
+        handle: gallery
+        field:
+          mode: list
+          container: cloud
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Gallery
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: year
+        field:
+          input_type: text
+          antlers: false
+          display: Year
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+title: Painting

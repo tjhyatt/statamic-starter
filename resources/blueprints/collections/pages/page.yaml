@@ -11,11 +11,127 @@ sections:
           validate:
             - required
       -
-        handle: content
+        handle: banner_text
         field:
-          type: markdown
-          display: Content
-          localizable: true
+          antlers: false
+          display: 'Banner Text'
+          type: textarea
+          icon: textarea
+          width: 50
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: banner_asset
+        field:
+          mode: list
+          container: cloud
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Banner Asset'
+          type: assets
+          icon: assets
+          width: 50
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: content_blocks
+        field:
+          collapse: false
+          previews: true
+          sets:
+            asset_copy:
+              display: 'Asset + Copy'
+              fields:
+                -
+                  handle: copy
+                  field:
+                    antlers: false
+                    display: Copy
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+                    width: 50
+                -
+                  handle: asset
+                  field:
+                    mode: list
+                    container: cloud
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: Asset
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+                    width: 50
+                -
+                  handle: flip
+                  field:
+                    default: false
+                    display: Flip
+                    type: toggle
+                    icon: toggle
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+            rich_text:
+              display: 'Rich Text'
+              fields:
+                -
+                  handle: rich_text
+                  field:
+                    always_show_set_button: false
+                    previews: true
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    antlers: false
+                    remove_empty_nodes: false
+                    display: 'Rich Text'
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+          display: 'Content Blocks'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
       -
         handle: author
         field:
@@ -30,96 +146,6 @@ sections:
           type: template
           display: Template
           localizable: true
-      -
-        handle: bard_field
-        field:
-          always_show_set_button: false
-          previews: true
-          buttons:
-            - h2
-            - h3
-            - bold
-            - italic
-            - unorderedlist
-            - orderedlist
-            - removeformat
-            - quote
-            - anchor
-            - image
-            - table
-          save_html: false
-          toolbar_mode: fixed
-          link_noopener: false
-          link_noreferrer: false
-          target_blank: false
-          reading_time: false
-          fullscreen: true
-          allow_source: true
-          enable_input_rules: true
-          enable_paste_rules: true
-          antlers: false
-          remove_empty_nodes: false
-          display: 'Bard Field'
-          type: bard
-          icon: bard
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
-      -
-        handle: assets_field
-        field:
-          mode: list
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          display: 'Assets Field'
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
-      -
-        handle: testimonials
-        field:
-          collapse: false
-          previews: true
-          sets:
-            new_set:
-              display: 'New Set'
-              fields:
-                -
-                  handle: author
-                  field:
-                    input_type: text
-                    antlers: false
-                    display: Author
-                    type: text
-                    icon: text
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    always_save: false
-                -
-                  handle: quote
-                  field:
-                    input_type: text
-                    antlers: false
-                    display: Quote
-                    type: text
-                    icon: text
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    always_save: false
-          display: Testimonials
-          type: replicator
-          icon: replicator
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
   sidebar:
     display: Sidebar
     fields:
@@ -137,3 +163,29 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+  meta:
+    display: Meta
+    fields:
+      -
+        handle: meta_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Meta Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: meta_description
+        field:
+          antlers: false
+          display: 'Meta Description'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false

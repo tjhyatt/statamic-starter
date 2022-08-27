@@ -1,0 +1,9 @@
+title: Artwork
+template: artwork/show
+layout: layout
+revisions: false
+route: '/artwork/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
