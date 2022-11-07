@@ -1,7 +1,14 @@
-<main class="flex w-full">
-  <div class="flex w-container-md mx-auto px-6 md:px-12 py-10">
-    <div>
-      {{ content }}
-    </div>
-  </div>
+<main class="block w-full">
+  {{ partial:banner }}
+
+  {{ content_blocks }}
+    {{ if type === 'rich_text' }}
+      {{ partial:richText }}
+    {{ /if }}
+
+    {{ if type === 'asset_copy' }}
+      {{ partial:assetCopy }}
+    {{ /if }}
+  {{ /content_blocks }}
+
 </main>

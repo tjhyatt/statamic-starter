@@ -11,17 +11,30 @@ sections:
           validate:
             - required
       -
+        handle: banner_header
+        field:
+          input_type: text
+          antlers: false
+          display: 'Banner Header'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          width: 33
+      -
         handle: banner_text
         field:
           antlers: false
           display: 'Banner Text'
           type: textarea
           icon: textarea
-          width: 50
           listable: hidden
           instructions_position: above
           visibility: visible
           always_save: false
+          width: 66
       -
         handle: banner_asset
         field:
@@ -33,11 +46,11 @@ sections:
           display: 'Banner Asset'
           type: assets
           icon: assets
-          width: 50
           listable: hidden
           instructions_position: above
           visibility: visible
           always_save: false
+          max_files: 1
       -
         handle: content_blocks
         field:
@@ -50,15 +63,39 @@ sections:
                 -
                   handle: copy
                   field:
+                    always_show_set_button: false
+                    previews: true
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
                     antlers: false
+                    remove_empty_nodes: false
                     display: Copy
-                    type: textarea
-                    icon: textarea
+                    type: bard
+                    icon: bard
                     listable: hidden
                     instructions_position: above
                     visibility: visible
                     always_save: false
-                    width: 50
                 -
                   handle: asset
                   field:
@@ -178,6 +215,7 @@ sections:
           instructions_position: above
           visibility: visible
           always_save: false
+          character_limit: 60
       -
         handle: meta_description
         field:
@@ -189,3 +227,4 @@ sections:
           instructions_position: above
           visibility: visible
           always_save: false
+          character_limit: '160'

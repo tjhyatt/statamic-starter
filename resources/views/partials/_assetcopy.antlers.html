@@ -1,0 +1,14 @@
+<div class="flex flex-wrap w-full px-6 md:px-12 py-12">
+  <div class="flex w-full max-w-container-lg mx-auto">
+    <div class="flex flex-grow flex-wrap items-center -mx-6 {{ flip ? 'md:flex-row-reverse' : ''}}">
+      <div class="w-full md:w-1/2 px-6 mb-4 md:mb-0">
+        {{ asset }}
+          <img src="{{ url }}" alt="{{ alt }}">
+        {{ /asset }}
+      </div>
+      <div class="w-full md:w-1/2 px-6">
+        {{ copy }}
+      </div>
+    </div>
+  </div>
+</div>

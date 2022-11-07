@@ -12,10 +12,18 @@ module.exports = {
       fontFamily: {
         'sans': ['Poppins', ...defaultTheme.fontFamily.sans],
       },
+      maxWidth: {
+        container: '1440px',
+        'container-lg': '1200px',
+        'container-md': '960px',
+        'container-sm': '768px',
+      },
       width: {
         container: '1440px',
+        'container-lg': '1200px',
         'container-md': '960px',
-      }
+        'container-sm': '768px',
+      },
     },
   },
   plugins: [
